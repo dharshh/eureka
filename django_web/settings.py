@@ -120,11 +120,10 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'profile_manager.apps.PollsConfig',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'profile_manager.apps.ProfileConfig',
+    'django.contrib.admin',
+    'django.contrib.admindocs',
+    'rest_framework'
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
