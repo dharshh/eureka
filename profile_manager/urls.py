@@ -17,7 +17,9 @@ from profile_manager import views
 
 urlpatterns = [
     url(r'^create_provider/$', views.provider_list),
-    url(r'^providers/(?P<id>[0-9]+)$', views.provider_detail),
+    url(r'^provider/(?P<id>[0-9]+)$', views.provider_detail),
+    url(r'^providers/$', views.provider_list),
+    url(r'^category/$', views.category_list),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
